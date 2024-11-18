@@ -1,8 +1,8 @@
 import { Link } from "react-scroll";
 const Navbar = () => {
   return (
-    <nav className="items-center justify-between py-8 mb-0">
-      <div className="menu flex flex-wrap justify-center bg-transparent border-2 border-neutral-600 relative p-5 mx-64 text-xl">
+    <nav className="items-center justify-between py-8 mb-0 lg:block hidden">
+      <div className="menu flex lg:flex-wrap justify-center bg-transparent lg:border-2 border-neutral-600 relative p-5 mx-64 text-xl">
         <Link
           to="About"
           smooth={true}

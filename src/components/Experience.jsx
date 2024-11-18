@@ -22,7 +22,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="lg:my-20 my-8 text-center lg:text-4xl text-3xl"
       >
         My Experience
       </motion.h1>
@@ -35,7 +35,7 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <p className="mb-2 font-semibold text-neutral-100">
+              <p className="lg:mb-2 mb-3 lg:font-semibold lg:text-neutral-100 text-neutral-400">
                 {Experience.year}
               </p>
             </motion.div>
@@ -45,33 +45,33 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold text-neutral-100">
+              <h6 className="mb-2 lg:font-semibold font-normal text-neutral-100">
                 {Experience.role} -{" "}
-                <span className="text-sm text-purple-100">
+                <span className="lg:font-semibold font-normal text-neutral-100">
                   {Experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400 text-justify">
+              <p className="mb-4 text-neutral-400 text-justify ">
                 {Experience.description}
               </p>
               {Experience.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded text-neutral-900 px-2 py-1 text-sm font-medium bg-slate-300"
+                  className="mr-2 rounded text-neutral-900 px-1 lg:px-2 py-1 text-xs lg:text-sm font-medium bg-slate-300"
                 >
                   {tech}
                 </span>
               ))}
-              <div className="flex flex-wrap gap-5">
+              <div className="flex gap-5 lg:w-52 w-44">
                 <img
                   src={Experience.image}
-                  width={200}
-                  height={200}
+                  // width={200}
+                  // height={200}
                   alt={Experience.title}
                   className="mb-6 rounded cursor-pointer my-5"
                   onClick={() => openModal(Experience.image)}
                 />
-                <p className="text-justify pt-5 py-6 mt-14">
+                <p className="flex-none pt-5 py-6 lg:mt-14 mt-12 text-sm lg:text-xl text-neutral-400 ">
                   Sertifikat Kelulusan
                 </p>
               </div>

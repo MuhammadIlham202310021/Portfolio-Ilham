@@ -24,7 +24,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="lg:my-20 my-8 text-center lg:text-4xl text-3xl"
       >
         Technologies
       </motion.h1>
@@ -32,7 +32,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-5"
       >
         <motion.div
           variants={iconVariants(3)}
@@ -40,7 +40,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine className="text-6xl lg:text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -48,7 +48,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavascriptFill className="text-7xl text-yellow-400" />
+          <RiJavascriptFill className="text-6xl lg:text-7xl text-yellow-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -56,7 +56,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaBootstrap className="text-7xl text-blue-500 " />
+          <FaBootstrap className="text-6xl lg:text-7xl text-blue-500 " />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -64,7 +64,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiSelenium className="text-7xl text-green-600" />
+          <SiSelenium className="text-6xl lg:text-7xl text-green-600" />
         </motion.div>
       </motion.div>
     </div>

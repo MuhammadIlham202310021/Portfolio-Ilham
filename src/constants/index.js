@@ -16,13 +16,9 @@ export const EXPERIENCES = [
     role: "Quality Assurance Intern",
     company: "PT. Summarecon Agung, Tbk.",
     description: `I handled manual testing for the Summarecon Mall and Summarecon Home apps on both web and mobile platforms (Android). My tasks included creating test cases, identifying and reporting bugs, and coordinating with developers to resolve issues. I also collaborated with system analysts and product specialists to discuss feature flows and ensure high application quality throughout the development process.`,
-    technologies: [
-      "Manual Testing",
-      "UAT Testing",
-      "Functional Testing",
-      "Black Box Testing",
-    ],
+    technologies: ["BlackBox Testing", "Manual Testing", "UAT Testing"],
     image: sertifikat3,
+    title: "Sertifikat",
     // image: sertifikat4,
   },
   {
@@ -55,6 +51,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Jl. Parung Bogor",
-  phoneNo: "089506273373",
+  phoneNo: "0895-0627-3373",
   email: "mhmmdilhamriza03@gmail.com",
 };

@@ -18,7 +18,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl"
+        className="lg:my-10 my-8 text-center lg:text-4xl text-3xl"
       >
         Contact Me
       </motion.h1>
@@ -27,7 +27,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-4 "
         >
           {CONTACT.address}
         </motion.p>
@@ -45,11 +45,11 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="my-4"
         >
-          <a href="#" className="my-4">
+          <a href="mailto:mhmmdilhamriza03@gmail.com" className="my-4">
             {CONTACT.email}
           </a>
         </motion.p>
-        <div className="flex items-center justify-center gap-4 text-4xl my-4">
+        <div className="flex items-center justify-center gap-4 lg:text-4xl text-3xl my-4">
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
@@ -73,7 +73,7 @@ const Contact = () => {
           {/* Tombol Kembali ke Atas */}
           <button
             onClick={scrollToTop}
-            className="fixed bottom-10 right-10 text-2xl border border-slate-300 bg-neutral-950 text-slate-300 rounded-full p-3 shadow-lg hover:text-neutral-950 hover:bg-slate-300 hover:border hover:border-neutral-300 transition duration-300"
+            className="fixed bottom-10 lg:right-10 ml-80 lg:ml-0 lg:text-2xl text-sm border border-slate-300 bg-neutral-950 text-slate-300 rounded-full p-3 shadow-lg hover:text-neutral-950 hover:bg-slate-300 hover:border hover:border-neutral-300 transition duration-300"
           >
             <FaArrowUp />
           </button>
