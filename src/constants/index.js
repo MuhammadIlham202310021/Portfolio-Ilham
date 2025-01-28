@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
 import sertifikat1 from "../assets/projects/Sertifikat1.png";
 // import sertifikat2 from "../assets/projects/Sertifikat2.png";
 import sertifikat3 from "../assets/projects/Sertifikat3.png";
@@ -46,6 +47,13 @@ export const PROJECTS = [
     description:
       "FHI (Family Health Information) is a website designed to provide extensive health information for people across Indonesia, with content that is easy for the general public to understand. This application was created as part of the requirements for completing the MSIB X Dicoding program.",
     technologies: ["HTML", "CSS", "Javascript", "Php", "Bootstrap", "MySQL"],
+  },
+  {
+    title: "Automation Testing OrangeHRM Web ",
+    image: project3,
+    description:
+      "I conducted automation testing on the OrangeHRM website, an HRMS used to manage employees and human resources. In addition to creating automation scripts, I prepared test cases in Excel and documented the testing process. The demo website https://opensource-demo.orangehrmlive.com allows users to test OrangeHRM’s features. However, like other websites, effective QA is needed to ensure proper functionality.",
+    technologies: ["Python", "Selenium IDE", "Excel"],
   },
 ];
 
