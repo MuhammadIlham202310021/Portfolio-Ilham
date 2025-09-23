@@ -2,6 +2,11 @@ import { RiReactjsLine } from "react-icons/ri";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";
+import { SiCypress } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+// import { SiKatalon } from "react-icons/si";
+import { SiApachejmeter } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -66,7 +71,32 @@ const Technologies = () => {
         >
           <SiSelenium className="text-6xl lg:text-7xl text-green-600" />
         </motion.div>
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiCypress className="text-6xl lg:text-7xl text-white-500 " />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiPostman className="text-6xl lg:text-7xl text-orange-600" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiApachejmeter className="text-6xl lg:text-7xl text-red-300 " />
+        </motion.div>
       </motion.div>
+      
     </div>
   );
 };

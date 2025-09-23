@@ -27,7 +27,7 @@ const About = () => {
           animate="visible"
           className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl lg:text-3xl tracking-tight text-transparent"
         >
-          Software Quality Assurance & Web Developer React JS
+          Junior Quality Assurance & Web Developer React JS
         </motion.span>
         <motion.p
           variants={container(1)}
