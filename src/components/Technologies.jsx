@@ -6,7 +6,8 @@ import { SiCypress } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 // import { SiKatalon } from "react-icons/si";
 import { SiApachejmeter } from "react-icons/si";
-
+import { useLang } from "../context/LangContext";
+import { t } from "../data/Translations";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -23,6 +24,8 @@ const iconVariants = (duration) => ({
 });
 
 const Technologies = () => {
+  const { lang } = useLang();
+
   return (
     <div id="Technologies" className="border-b border-neutral-800 pb-16">
       <motion.h1
@@ -31,7 +34,7 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="lg:my-20 my-8 text-center lg:text-4xl text-3xl"
       >
-        Technologies
+        {t[lang].technologies_title}
       </motion.h1>
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}

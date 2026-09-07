@@ -1,5 +1,7 @@
-import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
+import { HERO_CONTENT } from "../constants";
+import { useLang } from "../context/LangContext";
+import { t } from "../data/Translations";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -11,6 +13,8 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const { lang } = useLang();
+
   return (
     <div className="border-b border-neutral-900 lg:mb-35">
       <div className="w-full">
@@ -37,7 +41,7 @@ const Hero = () => {
             animate="visible"
             className="my-2 max-w-xl py-10 font-light tracking-tighter text-justify"
           >
-            {HERO_CONTENT}
+            {t[lang].hero_content}
           </motion.p>
         </div>
       </div>

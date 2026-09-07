@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { HERO_CONTENT } from "../constants";
+// import { ABOUT_TEXT } from "../constants";
+import { useLang } from "../context/LangContext";
+import { t } from "../data/Translations";
+
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -9,10 +12,13 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const About = () => {
+  const { lang } = useLang();
+
   return (
-    <div id="About" className="border-b border-neutral-900 pb-4 mt-14">
-      <div className="flex flex-col lg:items-center">
+    <div id="About" className="border-b border-neutral-900 pb-4 ">
+      <div className="flex flex-col items-center">
         <motion.h1
           variants={container(0)}
           initial="hidden"
@@ -27,15 +33,15 @@ const About = () => {
           animate="visible"
           className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl lg:text-3xl tracking-tight text-transparent"
         >
-          Junior Quality Assurance & Web Developer React JS
+          {t[lang].about_role}
         </motion.span>
         <motion.p
           variants={container(1)}
           initial="hidden"
           animate="visible"
-          className="my-2 lg:px-36 lg:py-10 py-4 font-medium text-sm lg:text-xl tracking-tighter lg:text-center text-justify"
+          className="lg:px-60 lg:py-10 py-4 font-medium text-sm lg:text-xl tracking-tighter lg:text-center text-justify"
         >
-          {HERO_CONTENT}
+          {t[lang].about_text}
         </motion.p>
       </div>
     </div>

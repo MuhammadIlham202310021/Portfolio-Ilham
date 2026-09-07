@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
+import { useLang } from "../context/LangContext";
+import { t } from "../data/Translations";
+
 
 const Contact = () => {
   const scrollToTop = () => {
@@ -12,6 +15,8 @@ const Contact = () => {
     });
   };
 
+  const { lang } = useLang();
+
   return (
     <div id="Contact" className="border-b border-neutral-900 pb-5">
       <motion.h1
@@ -20,7 +25,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="lg:my-10 my-8 text-center lg:text-4xl text-3xl"
       >
-        Contact Me
+        {t[lang].contact_title}
       </motion.h1>
       <div className="text-center tracking-tighter">
         <motion.p
